@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    background: rgb(19, 50, 71);
+    display:grid;
+    grid-template-columns: 8fr 2fr;
+	grid-column-gap: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color:aquamarine;
+    margin: -.5em;
+}
+.navbar img {
+    display: grid;
+	width: 100%;
+	max-height: 60px;
+	object-fit: scale-down;
+	object-position: left;
+    padding-top: 10px;
+}
+.promo {
+    width:100%;
+}
+.promo h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:60px;
+    color:black;
+    justify-content: center;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    left:42%;
+    right:50%;
+    top:50%;
+    width: 100%;
+    
+}
+.promo img {
+    display: grid;
+    margin: -.5em;
+    z-index: 0;
+}
+.parent {
+    display:grid;
+    grid-template-columns: 5fr 5fr;
+    grid-column-gap: 1em;
+}
+.left{
+    display:grid;
+    position:relative;
+}
+#I1 {
+    z-index: 1;
+    position: absolute;
+    height:auto;
+    width: 700px;
+    clip:rect(0px,700px,640px,0px);
+}
+#I2 {
+    z-index: 2;
+    position: absolute;
+    height:auto;
+    width:700px;
+    opacity:0;
+    clip:rect(0px,700px,780px,0px);
+}
+#I3 {
+    z-index: 3;
+    position: absolute;
+    height:auto;
+    width:700px;
+    opacity:0;
+    clip:rect(0px,700px,700px,0px);
+}
+#I4 {
+    z-index: 4;
+    position: absolute;
+    margin: -0.5em;
+    clip:rect(0px,700px,710px,0px);
+    
+}
+#I5 {
+    z-index: 4;
+    position: absolute;
+    margin: -0.5em;
+    opacity:0;
+    clip:rect(0px,700px,780px,0px);
+}
+#I6 {
+    z-index: 4;
+    position: absolute;
+    margin: -0.5em;
+    opacity:0;
+    clip:rect(0px,700px,710px,0px);
+}
+.right {
+    position:relative;
+    grid-template-rows: 5fr 5fr;
+    grid-row-gap: 1em;
+}
+.portrait {
+    position:relative;
+   
+}
+.portrait img {
+    padding: 2em;
+    filter:grayscale(100%);
+    
+}
+.portrait img:hover {
+    filter:grayscale(0%);
+}
+#p1:hover{
+    filter:drop-shadow(0 10px 10px rgb(77, 73, 73))
+}
+#p2:hover{
+    filter:drop-shadow(0 10px 10px rgb(77, 73, 73))
+}
+#p3:hover{
+    filter:drop-shadow(0 10px 10px rgb(77, 73, 73))
+}
+.description h2{
+    position:relative;
+    font-family: "Arsenal SC", serif;
+    font-size: 120px;
+    font-style:italic;
+    line-height: 10px;
+}
+.description p{
+    position:relative;
+    font-family: "Arsenal SC", serif;
+    font-size: 50px;
+}
+.footnote h3 {
+    position:relative;
+    display:grid;
+    margin: -0.5rem;
+    z-index: 6;
+    background: rgb(19, 50, 71);
+    color:white;
+    text-align: center;
+    padding-top:550px;
+}
